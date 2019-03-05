@@ -17,7 +17,7 @@ var middleware = {
 app.use(middleware.logger); //App level middleware
 
 app.get('/about', middleware.requireAuthentication, function(req, res) { //middleware route
-    res.send('About us')
+    res.send('About us!')
 });
 
 app.use(express.static(__dirname + '/public')); //Important
